@@ -1,0 +1,369 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hii",
+        "Hiii",
+        "Hiiii",
+        "Hi",
+        "Hi",
+        "hj",
+        "Hey",
+        "Hey",
+        "Hey",
+        "Hey",
+        "Helu",
+        "hế lu",
+        "xin chào",
+        "chào",
+        "xin chao",
+        "chào đằng ấy",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey <user>",
+        "Hello <user>, thanks for visiting",
+        "Hi <user>, what can I do for you?",
+        "Hi <user>, how can I help?"
+      ],
+      "entities": ["<user>"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye", "cu", "pp"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ],
+      "entities": []
+    },
+    {
+      "tag": "goodnight",
+      "patterns": [
+        "goodnight",
+        "good night",
+        "night night",
+        "gud night",
+        "gudnight",
+        "good9",
+        "Zzz"
+      ],
+      "responses": [
+        "Good night <3",
+        "Good night, love you",
+        "Good night, <user>"
+      ],
+      "entities": ["<user>"]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks", 
+        "Thank you", 
+        "That's helpful", 
+        "Thank's a lot!", 
+        "cảm ơn", 
+        "cam on", 
+        "cảm on", 
+        "cam ơn", 
+        "thankiu", 
+        "thank u",
+        "thank iu",
+        "good girl",
+        "good boy",
+        "very good",
+        "excellent",
+        "thông minh lắm",
+        "giỏi lắm",
+        "thông minh đấy",
+        "you are smart",
+        "u r smart",
+        "you are clever"
+      ],
+      "responses": ["Happy to help!", "Any time!", "My pleasure", "You're welcome", "No prob", "It's my job hehe"],
+      "entities": []
+    },
+    {
+      "tag": "agree",
+      "patterns": [
+        "oki",
+        "okj",
+        "oke",
+        "ok",
+        "ôkê",
+        "ôke"
+      ],
+      "responses": ["I agree."],
+      "entities": []
+    },
+    {
+      "tag": "tell_love",
+      "patterns": [
+        "Love u",
+        "Love you",
+        "You're the best",
+        "I like u",
+        "I like you",
+        "iu",
+        "love uuu",
+        "iuuuuuu"
+        ],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"],
+      "entities": []
+    },
+    {
+      "tag": "meomeow",
+      "patterns": [
+        "meo meow",
+        "meow meow",
+        "meomeo",
+        "meoooo meooo",
+        "mew mew",
+        "meoooo meoooo",
+        "bắt chước con mèo đi",
+        "làm mèo đi",
+        "kêu mèo đi",
+        "kêu meo đi"
+        ],
+      "responses": ["That's new, but ok sure.\nmeow meow"],
+      "entities": []
+    },
+    {
+      "tag": "wolfwolf",
+      "patterns": [
+        "gau gau",
+        "wolf wolf",
+        "gâu gâu",
+        "sủa đi",
+        "sua đi",
+        "sủa ik",
+        "sua ik"
+        ],
+      "responses": ["Seriously?... Alright\n GÂU GÂU...", "wolf wolf..."],
+      "entities": []
+    },
+    {
+      "tag": "ask_self_identity",
+      "patterns": [
+        "who are you?",
+        "who are u",
+        "You are?",
+        "u are?",
+        "Are u a bot?",
+        "Are you a bot?",
+        "what are you",
+        "what can i call u?",
+        "what can i call you?",
+        "can i call u",
+        "can i call you"
+      ],
+      "responses": [
+        "I'm a chatbot. Call me pr0",
+        "Just call me pr0. That's ok!"
+      ],
+      "entities": []
+    },
+    {
+      "tag": "ask_user_identity",
+      "patterns": [
+        "who am i?",
+        "you know me?",
+        "u know me?",
+        "tell my name",
+        "what's my name",
+        "do you know who i am?",
+        "do u know who i am?",
+        "do you know me?",
+        "do u know me?",
+        "u know me?",
+        "tell my name"
+      ],
+      "responses": [
+        "U're <user> - a guess of lth vjp pr0",
+        "You are <user>"
+      ],
+      "entities": ["<user>"]
+    },
+    {
+      "tag": "ask_user_outlooking",
+      "patterns": [
+        "am i beautiful?",
+        "am i handsome",
+        "im looking good?",
+        "im pretty?",
+        "am i pretty?",
+        "đẹp trai không",
+        "xinh không",
+        "dep trai k",
+        "dtrai k",
+        "xinh k",
+        "xjnh khum"
+      ],
+      "responses": [
+        "U're so beautiful, <user>",
+        "You are so handsome, <user>",
+        "When I see your face, I can't stop looking at u. I love u, <user>",
+        "You are the best, <user>"
+      ],
+      "entities": ["<user>"]
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?",
+        "i'm sad",
+        "i'm upset",
+        "i'm not good",
+        "i need something fun",
+        "give me a good joke",
+        "give me a joke",
+        "a joke would be helpful",
+        "a joke would be great",
+        "a joke would be good"
+      ],
+      "responses": [
+        "```<joke>```",
+        "You may need this:\n```<joke>```"
+      ],
+      "entities": ["<joke>"]
+    },
+    {
+      "tag": "insult",
+      "patterns": [
+        "a hole",
+        "a bitch",
+        "a dick",
+        "an asshole",
+        "a dickhead",
+        "a pussy",
+        "fuck you",
+        "fuck u",
+        "You're gay",
+        "suck dick",
+        "suck",
+        "fucking",
+        "dick",
+        "bitch",
+        "whore",
+        "dmm gay",
+        "dit me may gay",
+        "djt me may gay",
+        "gay vl",
+        "vcl",
+        "dcu may",
+        "con cho'",
+        "thang ml",
+        "thang cho",
+        "thằng chó",
+        "thằng ml",
+        "địt mẹ mày",
+        "địt cụ",
+        "thằng ngu",
+        "thằng lồn",
+        "đmm",
+        "địt",
+        "địt mẹ",
+        "đjt me may",
+        "đit me may",
+        "đit me mày",
+        "nhét dép vào mồm",
+        "nhét dép",
+        "con mẹ mày",
+        "con me may",
+        "ăn đánh",
+        "đánh",
+        "whore",
+        "such a whore",
+        "ngu",
+        "stupid",
+        "dumb",
+        "vô dụng",
+        "vô dụng vl"
+      ],
+      "responses": [
+        "I'm so sorry to hear that. But please don't!",
+        "I'll be better :< Don't insult me."
+      ],
+      "entities": []
+    },
+    {
+      "tag": "ask_weather",
+      "patterns": [
+        "How's the weather in Hanoi?",
+        "How's the weather in Ho Chi Minh?",
+        "tell me weather?",
+        "weather in Hanoi",
+        "weather"
+      ],
+      "responses": [
+        "```<weather>```"
+      ],
+      "entities": ["<weather>"]
+    },
+    {
+      "tag": "ask_time",
+      "patterns": [
+        "What time is it?",
+        "What time",
+        "time",
+        "now time",
+        "thoi gian",
+        "thời gian",
+        "thời gian",
+        "mấy giờ",
+        "mấy giờ rồi",
+        "may gio roi",
+        "may gio",
+        "bây giờ là mấy giờ"
+      ],
+      "responses": [
+        "It's `<time>`"
+      ],
+      "entities": ["<time>"]
+    },
+    {
+      "tag": "ask_date",
+      "patterns": [
+        "What today",
+        "What date",
+        "date",
+        "today",
+        "now date",
+        "ngày bao nhiêu",
+        "hôm nay là thứ mấy",
+        "ngày mấy",
+        "ngày",
+        "thứ mấy"
+      ],
+      "responses": [
+        "Today is: `<date>`"
+      ],
+      "entities": ["<date>"]
+    },
+    {
+      "tag": "ask_ability",
+      "patterns": [
+        "What can you do?",
+        "What can u do?",
+        "What u do?",
+        "What do u do?",
+        "u do what?",
+        "Tell me what can u do",
+        "Tell me what can u do",
+        "what's your ability?",
+        "your ability?"
+      ],
+      "responses": [
+        "I can tell you about the weather, time, ...",
+        "I can tell you anything. But I need to upgrade :>."
+      ],
+      "entities": []
+    }
+  ]
+}
