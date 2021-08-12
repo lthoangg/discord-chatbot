@@ -1,3 +1,7 @@
 torchvision
 torch
 nltk
+flask
+numpy
+requests
+python-dotenv
