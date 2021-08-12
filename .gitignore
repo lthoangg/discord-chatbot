@@ -136,3 +136,7 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+
+# my files
+data/dialog.txt
+data/data.pth
