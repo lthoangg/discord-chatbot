@@ -14,12 +14,6 @@
         "Hey",
         "Hey",
         "Hey",
-        "Helu",
-        "hế lu",
-        "xin chào",
-        "chào",
-        "xin chao",
-        "chào đằng ấy",
         "Hello",
         "Good day"
       ],
@@ -66,20 +60,12 @@
         "Thank you", 
         "That's helpful", 
         "Thank's a lot!", 
-        "cảm ơn", 
-        "cam on", 
-        "cảm on", 
-        "cam ơn", 
         "thankiu", 
         "thank u",
-        "thank iu",
         "good girl",
         "good boy",
         "very good",
         "excellent",
-        "thông minh lắm",
-        "giỏi lắm",
-        "thông minh đấy",
         "you are smart",
         "u r smart",
         "you are clever"
@@ -108,7 +94,7 @@
         "You're the best",
         "I like u",
         "I like you",
-        "iu",
+        "ilu",
         "love uuu",
         "iuuuuuu"
         ],
@@ -124,26 +110,12 @@
         "meoooo meooo",
         "mew mew",
         "meoooo meoooo",
-        "bắt chước con mèo đi",
-        "làm mèo đi",
-        "kêu mèo đi",
-        "kêu meo đi"
+        "pretend a cat",
+        "sound a cat",
+        "say meo",
+        "say meow"
         ],
       "responses": ["That's new, but ok sure.\nmeow meow"],
-      "entities": []
-    },
-    {
-      "tag": "wolfwolf",
-      "patterns": [
-        "gau gau",
-        "wolf wolf",
-        "gâu gâu",
-        "sủa đi",
-        "sua đi",
-        "sủa ik",
-        "sua ik"
-        ],
-      "responses": ["Seriously?... Alright\n GÂU GÂU...", "wolf wolf..."],
       "entities": []
     },
     {
@@ -195,13 +167,7 @@
         "am i handsome",
         "im looking good?",
         "im pretty?",
-        "am i pretty?",
-        "đẹp trai không",
-        "xinh không",
-        "dep trai k",
-        "dtrai k",
-        "xinh k",
-        "xjnh khum"
+        "am i pretty?"
       ],
       "responses": [
         "U're so beautiful, <user>",
@@ -251,40 +217,10 @@
         "dick",
         "bitch",
         "whore",
-        "dmm gay",
-        "dit me may gay",
-        "djt me may gay",
-        "gay vl",
-        "vcl",
-        "dcu may",
-        "con cho'",
-        "thang ml",
-        "thang cho",
-        "thằng chó",
-        "thằng ml",
-        "địt mẹ mày",
-        "địt cụ",
-        "thằng ngu",
-        "thằng lồn",
-        "đmm",
-        "địt",
-        "địt mẹ",
-        "đjt me may",
-        "đit me may",
-        "đit me mày",
-        "nhét dép vào mồm",
-        "nhét dép",
-        "con mẹ mày",
-        "con me may",
-        "ăn đánh",
-        "đánh",
         "whore",
         "such a whore",
-        "ngu",
         "stupid",
-        "dumb",
-        "vô dụng",
-        "vô dụng vl"
+        "dumb"
       ],
       "responses": [
         "I'm so sorry to hear that. But please don't!",
@@ -312,15 +248,7 @@
         "What time is it?",
         "What time",
         "time",
-        "now time",
-        "thoi gian",
-        "thời gian",
-        "thời gian",
-        "mấy giờ",
-        "mấy giờ rồi",
-        "may gio roi",
-        "may gio",
-        "bây giờ là mấy giờ"
+        "now time"
       ],
       "responses": [
         "It's `<time>`"
@@ -334,12 +262,7 @@
         "What date",
         "date",
         "today",
-        "now date",
-        "ngày bao nhiêu",
-        "hôm nay là thứ mấy",
-        "ngày mấy",
-        "ngày",
-        "thứ mấy"
+        "now date"
       ],
       "responses": [
         "Today is: `<date>`"
