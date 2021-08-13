@@ -26,34 +26,6 @@
       "entities": ["<user>"]
     },
     {
-      "tag": "goodbye",
-      "patterns": ["Bye", "See you later", "Goodbye", "cu", "pp"],
-      "responses": [
-        "See you later, thanks for visiting",
-        "Have a nice day",
-        "Bye! Come back again soon."
-      ],
-      "entities": []
-    },
-    {
-      "tag": "goodnight",
-      "patterns": [
-        "goodnight",
-        "good night",
-        "night night",
-        "gud night",
-        "gudnight",
-        "good9",
-        "Zzz"
-      ],
-      "responses": [
-        "Good night <3",
-        "Good night, love you",
-        "Good night, <user>"
-      ],
-      "entities": ["<user>"]
-    },
-    {
       "tag": "thanks",
       "patterns": [
         "Thanks", 
@@ -74,6 +46,49 @@
       "entities": []
     },
     {
+      "tag": "sorry",
+      "patterns": [
+        "I'm sorry",
+        "so sorry",
+        "my bad",
+        "my bad, forgive me",
+        "me sorry",
+        "i'm sorry, forgive me",
+        "me sorry, forgive me"
+      ],
+      "responses": ["It's okay. I'm fine", "I forgive you, don't worry.", "Don't need to, I'm a bot. I'm tough"],
+      "entities": []
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye", "cu", "pp"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ],
+      "entities": []
+    },
+    {
+      "tag": "goodnight",
+      "patterns": [
+        "goodnight",
+        "good night",
+        "night night",
+        "gud night",
+        "gudnight",
+        "good9",
+        "Zzz",
+        "G9"
+      ],
+      "responses": [
+        "Good night <3",
+        "Good night, love you",
+        "G9, luv u"
+      ],
+      "entities": []
+    },
+    {
       "tag": "agree",
       "patterns": [
         "oki",
@@ -83,11 +98,11 @@
         "ôkê",
         "ôke"
       ],
-      "responses": ["I agree."],
+      "responses": ["I agree.", "oki", "oke"],
       "entities": []
     },
     {
-      "tag": "tell_love",
+      "tag": "love",
       "patterns": [
         "Love u",
         "Love you",
@@ -96,111 +111,13 @@
         "I like you",
         "ilu",
         "love uuu",
-        "iuuuuuu"
+        "iu"
         ],
-      "responses": ["Happy to help!", "Any time!", "My pleasure"],
+      "responses": ["Love u too", "I love you too", "Hehe I know :>"],
       "entities": []
     },
     {
-      "tag": "meomeow",
-      "patterns": [
-        "meo meow",
-        "meow meow",
-        "meomeo",
-        "meoooo meooo",
-        "mew mew",
-        "meoooo meoooo",
-        "pretend a cat",
-        "sound a cat",
-        "say meo",
-        "say meow"
-        ],
-      "responses": ["That's new, but ok sure.\nmeow meow"],
-      "entities": []
-    },
-    {
-      "tag": "ask_self_identity",
-      "patterns": [
-        "who are you?",
-        "who are u",
-        "You are?",
-        "u are?",
-        "Are u a bot?",
-        "Are you a bot?",
-        "what are you",
-        "what can i call u?",
-        "what can i call you?",
-        "can i call u",
-        "can i call you"
-      ],
-      "responses": [
-        "I'm a chatbot. Call me pr0",
-        "Just call me pr0. That's ok!"
-      ],
-      "entities": []
-    },
-    {
-      "tag": "ask_user_identity",
-      "patterns": [
-        "who am i?",
-        "you know me?",
-        "u know me?",
-        "tell my name",
-        "what's my name",
-        "do you know who i am?",
-        "do u know who i am?",
-        "do you know me?",
-        "do u know me?",
-        "u know me?",
-        "tell my name"
-      ],
-      "responses": [
-        "U're <user> - a guess of lth vjp pr0",
-        "You are <user>"
-      ],
-      "entities": ["<user>"]
-    },
-    {
-      "tag": "ask_user_outlooking",
-      "patterns": [
-        "am i beautiful?",
-        "am i handsome",
-        "im looking good?",
-        "im pretty?",
-        "am i pretty?"
-      ],
-      "responses": [
-        "U're so beautiful, <user>",
-        "You are so handsome, <user>",
-        "When I see your face, I can't stop looking at u. I love u, <user>",
-        "You are the best, <user>"
-      ],
-      "entities": ["<user>"]
-    },
-    {
-      "tag": "funny",
-      "patterns": [
-        "Tell me a joke!",
-        "Tell me something funny!",
-        "Do you know a joke?",
-        "i'm sad",
-        "i'm upset",
-        "i'm not good",
-        "i need something fun",
-        "give me a good joke",
-        "give me a joke",
-        "a joke would be helpful",
-        "a joke would be great",
-        "a joke would be good"
-      ],
-      "responses": [
-        "```<joke>```",
-        "You may need this:\n```<joke>```"
-      ],
-      "entities": ["<joke>"]
-    },
-    {
-      "tag": "insult",
+      "tag": "hate",
       "patterns": [
         "a hole",
         "a bitch",
@@ -229,6 +146,27 @@
       "entities": []
     },
     {
+      "tag": "share",
+      "patterns": [
+        "I'm sad",
+        "me sad",
+        "I'm bored",
+        "me boring",
+        "i'm upset",
+        "I'm so lonely",
+        "I'm alone",
+        "I'm lonely",
+        "me lonely",
+        "me so lonely"
+      ],
+      "responses": [
+        "It's okay... Don't be sad.",
+        "Don't be... Everything is gonna be ok...",
+        "I promise it'll be better :>"
+      ],
+      "entities": []
+    },
+    {
       "tag": "ask_weather",
       "patterns": [
         "How's the weather in Hanoi?",
@@ -243,17 +181,81 @@
       "entities": ["<weather>"]
     },
     {
-      "tag": "ask_time",
+      "tag": "ask_knowledge",
       "patterns": [
-        "What time is it?",
-        "What time",
-        "time",
-        "now time"
+        "What's the ",
+        "What is the ",
+        "How to make ",
+        "What can I do with"
       ],
       "responses": [
-        "It's `<time>`"
+        "<knowledge>"
       ],
-      "entities": ["<time>"]
+      "entities": ["<knowledge>"]
+    },
+    {
+      "tag": "ask_music",
+      "patterns": [
+        "play this song",
+        "sing me ",
+        "I want to listen to ",
+        "A song",
+        "play music",
+        "start music",
+        "play song"
+      ],
+      "responses": [
+        "<song>"
+      ],
+      "entities": ["<song>"]
+    },
+    {
+      "tag": "ask_joke",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?",
+        "i need something fun",
+        "give me a good joke",
+        "give me a joke",
+        "a joke would be helpful",
+        "a joke would be great",
+        "a joke would be good",
+        "another joke",
+        "a joke pls",
+        "joke please",
+        "tell me something funny",
+        "something funny",
+        "funny thing",
+        "i want to laugh",
+        "joke about "
+      ],
+      "responses": [
+        "Is this what you need?\n```<joke>```",
+        "```<joke>```"
+      ],
+      "entities": ["<joke>"]
+    },
+    {
+      "tag": "ask_self_identity",
+      "patterns": [
+        "who are you?",
+        "who are u",
+        "You are?",
+        "u are?",
+        "Are u a bot?",
+        "Are you a bot?",
+        "what are you",
+        "what can i call u?",
+        "what can i call you?",
+        "can i call u",
+        "can i call you"
+      ],
+      "responses": [
+        "I'm a chatbot. Call me pr0",
+        "Just call me pr0. That's ok!"
+      ],
+      "entities": []
     },
     {
       "tag": "ask_date",
@@ -270,7 +272,58 @@
       "entities": ["<date>"]
     },
     {
-      "tag": "ask_ability",
+      "tag": "ask_time",
+      "patterns": [
+        "What time is it?",
+        "What time",
+        "time",
+        "now time"
+      ],
+      "responses": [
+        "It's `<time>`"
+      ],
+      "entities": ["<time>"]
+    },
+    {
+      "tag": "ask_uid",
+      "patterns": [
+        "who am i?",
+        "you know me?",
+        "u know me?",
+        "tell my name",
+        "what's my name",
+        "do you know who i am?",
+        "do u know who i am?",
+        "do you know me?",
+        "do u know me?",
+        "u know me?",
+        "tell my name"
+      ],
+      "responses": [
+        "U're <user> - a guess of lth vjp pr0",
+        "You are <user>"
+      ],
+      "entities": ["<user>"]
+    },
+    {
+      "tag": "ask_uol",
+      "patterns": [
+        "am i beautiful?",
+        "am i handsome",
+        "im looking good?",
+        "im pretty?",
+        "am i pretty?"
+      ],
+      "responses": [
+        "U're so beautiful, <user>",
+        "You are so handsome, <user>",
+        "When I see your face, I can't stop looking at u. I love u, <user>",
+        "You are the best, <user>"
+      ],
+      "entities": ["<user>"]
+    },
+    {
+      "tag": "ask_bot",
       "patterns": [
         "What can you do?",
         "What can u do?",
