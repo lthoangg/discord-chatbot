@@ -1,42 +1,36 @@
-import os
-import re
 from tools.api import get_weather_data, get_joke_data
 import random
 import json
 import torch
-from tools.model import NeuralNet
+from tools.model import ChatBotModule
 from tools.nltk_utils import bag_of_words, tokenize
 from datetime import datetime
-
-device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 with open('data/intents.json', 'r') as json_data:
     intents = json.load(json_data)
 
-FILE = "data/data.pth"
-data = torch.load(FILE)
+data = torch.load("data/params.pth")
 
 input_size = data["input_size"]
 hidden_size = data["hidden_size"]
 output_size = data["output_size"]
 all_words = data['all_words']
 tags = data['tags']
-model_state = data["model_state"]
 
-model = NeuralNet(input_size, hidden_size, output_size).to(device)
-model.load_state_dict(model_state)
+model = ChatBotModule.load_from_checkpoint(checkpoint_path="data/model.ckpt")
+
 model.eval()
 
 def save_msg(msg, tag):
     with open("data/dialog.txt", "a+") as f:
         f.write(f"{msg}\t{tag}\n")
 
-def get_response(sentence):
+def predict(sentence):
     temp = sentence
     sentence = tokenize(sentence)
     X = bag_of_words(sentence, all_words)
     X = X.reshape(1, X.shape[0])
-    X = torch.from_numpy(X).to(device)
+    X = torch.from_numpy(X)
 
     output = model(X)
     _, predicted = torch.max(output, dim=1)
@@ -67,7 +61,10 @@ def get_joke_response(**kwargs):
     return f"{data['setup']}\n{data['punchline']}"
 
 def get_user_nickname(**kwargs):
-    nick = kwargs.get('user').nick or kwargs.get('user')
+    try:
+        nick = kwargs.get('user').nick or kwargs.get('user')
+    except Exception:
+        nick = kwargs.get('user')['nick']
     return f'***{nick}***'
 
 def get_time_response(**kwargs):
@@ -75,15 +72,6 @@ def get_time_response(**kwargs):
 
 def get_date_response(**kwargs):
     return datetime.now().strftime("%A, %d/%m/%Y")
-
-def get_do_math_response(problem):
-    try:
-        msg = re.findall("\d+\ +?[\+\-\*\/]\ +?\d+", problem)[0]
-        msg = (random.choice(["It's so easy: ", "Too easy: ", "Try harder: "]) + "`{} = {:,}`").format(' '.join(msg.split(' ')), eval(msg))
-    except Exception as e:
-        msg = "I can't do this problem."
-        msg = repr(e)
-    return msg
     
 DEGREE_SIGN = u"\N{DEGREE SIGN}"
 

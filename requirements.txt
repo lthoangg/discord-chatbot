@@ -1,4 +1,5 @@
 torchvision
+pytorch_lightning
 torch
 nltk
 flask
