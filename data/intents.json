@@ -181,35 +181,6 @@
       "entities": ["<weather>"]
     },
     {
-      "tag": "ask_knowledge",
-      "patterns": [
-        "What's the ",
-        "What is the ",
-        "How to make ",
-        "What can I do with"
-      ],
-      "responses": [
-        "<knowledge>"
-      ],
-      "entities": ["<knowledge>"]
-    },
-    {
-      "tag": "ask_music",
-      "patterns": [
-        "play this song",
-        "sing me ",
-        "I want to listen to ",
-        "A song",
-        "play music",
-        "start music",
-        "play song"
-      ],
-      "responses": [
-        "<song>"
-      ],
-      "entities": ["<song>"]
-    },
-    {
       "tag": "ask_joke",
       "patterns": [
         "Tell me a joke!",
@@ -312,7 +283,8 @@
         "am i handsome",
         "im looking good?",
         "im pretty?",
-        "am i pretty?"
+        "am i pretty?",
+        "do i look good"
       ],
       "responses": [
         "U're so beautiful, <user>",

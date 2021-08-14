@@ -81,7 +81,8 @@ responses = {
     "<joke>": get_joke_response,
     "<time>": get_time_response,
     "<date>": get_date_response,
-    # "<knowledge>": ret
+    # "<knowledge>": None,
+    # "<song>": None
 }
 
 def get_msg(msg, ent, **kwargs):
