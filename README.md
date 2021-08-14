@@ -3,8 +3,8 @@
 ## Instruction
 * Create *.env* file with these keys:
 ```env
-TOKEN=
-weather_api=
+TOKEN= #secret key from discord
+weather_api= #secret keyfrom OpenWeatherAPI
 ```
 
 * Install packages
@@ -21,3 +21,7 @@ python train.py
 ```bash
 python main.py
 ```
+
+
+## References
+I'm using the same methodology from [this repo](https://github.com/python-engineer/pytorch-chatbot) but using **pytorch_lightning**
