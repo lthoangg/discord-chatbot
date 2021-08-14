@@ -17,6 +17,11 @@ pip install -r requirements.txt
 python train.py
 ```
 
+* Test bot on local before public to discord
+```bash
+python test.py
+```
+
 * Connect to discord server & run chatbot
 ```bash
 python main.py
