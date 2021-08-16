@@ -5,6 +5,7 @@ import torch
 from tools.model import ChatBotModule
 from tools.nltk_utils import bag_of_words, tokenize
 from datetime import datetime
+import pytz
 
 with open('data/intents.json', 'r') as json_data:
     intents = json.load(json_data)
@@ -68,10 +69,10 @@ def get_user_nickname(**kwargs):
     return f'***{nick}***'
 
 def get_time_response(**kwargs):
-    return datetime.now().strftime("%H:%M")
+    return datetime.now(pytz.timezone('Asia/Ho_chi_minh')).strftime("%H:%M")
 
 def get_date_response(**kwargs):
-    return datetime.now().strftime("%A, %d/%m/%Y")
+    return datetime.now(pytz.timezone('Asia/Ho_chi_minh')).strftime("%A, %d/%m/%Y")
     
 DEGREE_SIGN = u"\N{DEGREE SIGN}"
 
