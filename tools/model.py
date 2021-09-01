@@ -8,6 +8,7 @@ class ChatBotModule(pl.LightningModule):
     self.l3 = nn.Linear(hidden_size, num_classes)
     self.relu = nn.ReLU()
 
+    self.accuracy = torchmetrics.Accuracy()
     self.lr = lr
     self.loss = nn.CrossEntropyLoss()
     self.save_hyperparameters()
@@ -25,6 +26,7 @@ class ChatBotModule(pl.LightningModule):
     y_hat = self(x)
     loss = self.loss(y_hat, y)
     self.log('train_loss', loss)
+    self.log('train_acc', self.accuracy(y_hat, y), prog_bar=True)
     return loss
 
   def configure_optimizers(self):
@@ -45,15 +47,4 @@ class ChatDataset(Dataset):
     def __len__(self):
         return self.n_samples
 
-class ChatbotDataModule(pl.LightningDataModule):
-    def __init__(self, dataset: ChatDataset, batch_size: int = 8):
-        super().__init__()
-        self.dataset = dataset
-        self.batch_size = batch_size
-        
-    def prepare_data(self):
-        self.data_train = self.dataset
-
-    def train_dataloader(self):
-        return DataLoader(self.data_train, batch_size=self.batch_size)
 
