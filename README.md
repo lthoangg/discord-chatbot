@@ -3,16 +3,22 @@
 ## Instruction
 * Create *.env* file with these keys:
 ```env
-TOKEN= #secret key from discord
-weather_api= #secret keyfrom OpenWeatherAPI
+TOKEN=#secret key from discord
+weather_api=#secret keyfrom OpenWeatherAPI
 ```
 
-* Install packages
+* Creat environment and activate (Conda)
+```
+conda create -n discord-chatbot python==3.8.11
+conda activate discord-chatbot
+```
+
+* Install packages 
 ```bash
 pip install -r requirements.txt
 ```
 
-* Train model with *intents.json* data
+* Train model with *data/intents.json* data
 ```bash
 python trainer.py
 ```
