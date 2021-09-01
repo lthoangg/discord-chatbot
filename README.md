@@ -14,7 +14,7 @@ pip install -r requirements.txt
 
 * Train model with *intents.json* data
 ```bash
-python train.py
+python trainer.py
 ```
 
 * Test bot on local before public to discord
